@@ -11,7 +11,7 @@ import SwiftUI
 struct Tu_LanchaApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            TabViewCustom()
         }
     }
 }
