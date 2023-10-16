@@ -17,6 +17,7 @@
 		719E54F92ADD189900A87D7D /* CustomEmbarkationScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719E54F82ADD189900A87D7D /* CustomEmbarkationScrollView.swift */; };
 		719E54FB2ADD18ED00A87D7D /* CustomAllBoatScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719E54FA2ADD18ED00A87D7D /* CustomAllBoatScrollView.swift */; };
 		719E54FD2ADD191E00A87D7D /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719E54FC2ADD191E00A87D7D /* MessageView.swift */; };
+		719E54FF2ADD197900A87D7D /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719E54FE2ADD197900A87D7D /* CalendarView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		719E54F82ADD189900A87D7D /* CustomEmbarkationScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomEmbarkationScrollView.swift; sourceTree = "<group>"; };
 		719E54FA2ADD18ED00A87D7D /* CustomAllBoatScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAllBoatScrollView.swift; sourceTree = "<group>"; };
 		719E54FC2ADD191E00A87D7D /* MessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageView.swift; sourceTree = "<group>"; };
+		719E54FE2ADD197900A87D7D /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +73,7 @@
 				719E54F82ADD189900A87D7D /* CustomEmbarkationScrollView.swift */,
 				719E54FA2ADD18ED00A87D7D /* CustomAllBoatScrollView.swift */,
 				719E54FC2ADD191E00A87D7D /* MessageView.swift */,
+				719E54FE2ADD197900A87D7D /* CalendarView.swift */,
 				719E54E82ADD15A400A87D7D /* Assets.xcassets */,
 				719E54EA2ADD15A400A87D7D /* Preview Content */,
 			);
@@ -160,6 +163,7 @@
 				719E54F72ADD17FA00A87D7D /* CustomMarinaScrollView.swift in Sources */,
 				719E54E72ADD15A300A87D7D /* ContentView.swift in Sources */,
 				719E54FD2ADD191E00A87D7D /* MessageView.swift in Sources */,
+				719E54FF2ADD197900A87D7D /* CalendarView.swift in Sources */,
 				719E54FB2ADD18ED00A87D7D /* CustomAllBoatScrollView.swift in Sources */,
 				719E54E52ADD15A300A87D7D /* Tu_LanchaApp.swift in Sources */,
 				719E54F32ADD173000A87D7D /* TabViewCustom.swift in Sources */,
