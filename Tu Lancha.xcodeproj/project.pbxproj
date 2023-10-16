@@ -18,7 +18,7 @@
 		719E54FB2ADD18ED00A87D7D /* CustomAllBoatScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719E54FA2ADD18ED00A87D7D /* CustomAllBoatScrollView.swift */; };
 		719E54FD2ADD191E00A87D7D /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719E54FC2ADD191E00A87D7D /* MessageView.swift */; };
 		719E54FF2ADD197900A87D7D /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719E54FE2ADD197900A87D7D /* CalendarView.swift */; };
-		719E55012ADD19B600A87D7D /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719E55002ADD19B600A87D7D /* AccountView.swift */; };
+		719E55012ADD19B600A87D7D /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719E55002ADD19B600A87D7D /* LoginView.swift */; };
 		719E55032ADD1C2C00A87D7D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 719E55022ADD1C2C00A87D7D /* GoogleService-Info.plist */; };
 		719E55062ADD1CF300A87D7D /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 719E55052ADD1CF300A87D7D /* FirebaseAnalytics */; };
 		719E55082ADD1CF300A87D7D /* FirebaseAnalyticsOnDeviceConversion in Frameworks */ = {isa = PBXBuildFile; productRef = 719E55072ADD1CF300A87D7D /* FirebaseAnalyticsOnDeviceConversion */; };
@@ -47,6 +47,8 @@
 		719E55362ADD1CF300A87D7D /* FirebaseRemoteConfigSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 719E55352ADD1CF300A87D7D /* FirebaseRemoteConfigSwift */; };
 		719E55382ADD1CF300A87D7D /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 719E55372ADD1CF300A87D7D /* FirebaseStorage */; };
 		719E553A2ADD1CF300A87D7D /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 719E55392ADD1CF300A87D7D /* FirebaseStorageCombine-Community */; };
+		719E553C2ADD2DFC00A87D7D /* AuthenticationDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719E553B2ADD2DFC00A87D7D /* AuthenticationDataSource.swift */; };
+		719E553E2ADD2EAB00A87D7D /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719E553D2ADD2EAB00A87D7D /* RegisterView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,8 +64,10 @@
 		719E54FA2ADD18ED00A87D7D /* CustomAllBoatScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAllBoatScrollView.swift; sourceTree = "<group>"; };
 		719E54FC2ADD191E00A87D7D /* MessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageView.swift; sourceTree = "<group>"; };
 		719E54FE2ADD197900A87D7D /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
-		719E55002ADD19B600A87D7D /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
+		719E55002ADD19B600A87D7D /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		719E55022ADD1C2C00A87D7D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		719E553B2ADD2DFC00A87D7D /* AuthenticationDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationDataSource.swift; sourceTree = "<group>"; };
+		719E553D2ADD2EAB00A87D7D /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,9 +136,11 @@
 				719E54FA2ADD18ED00A87D7D /* CustomAllBoatScrollView.swift */,
 				719E54FC2ADD191E00A87D7D /* MessageView.swift */,
 				719E54FE2ADD197900A87D7D /* CalendarView.swift */,
-				719E55002ADD19B600A87D7D /* AccountView.swift */,
-				719E55022ADD1C2C00A87D7D /* GoogleService-Info.plist */,
+				719E55002ADD19B600A87D7D /* LoginView.swift */,
+				719E553D2ADD2EAB00A87D7D /* RegisterView.swift */,
+				719E553B2ADD2DFC00A87D7D /* AuthenticationDataSource.swift */,
 				719E54E82ADD15A400A87D7D /* Assets.xcassets */,
+				719E55022ADD1C2C00A87D7D /* GoogleService-Info.plist */,
 				719E54EA2ADD15A400A87D7D /* Preview Content */,
 			);
 			path = "Tu Lancha";
@@ -255,12 +261,14 @@
 				719E54F52ADD17A100A87D7D /* SearchView.swift in Sources */,
 				719E54F72ADD17FA00A87D7D /* CustomMarinaScrollView.swift in Sources */,
 				719E54E72ADD15A300A87D7D /* ContentView.swift in Sources */,
-				719E55012ADD19B600A87D7D /* AccountView.swift in Sources */,
+				719E55012ADD19B600A87D7D /* LoginView.swift in Sources */,
 				719E54FD2ADD191E00A87D7D /* MessageView.swift in Sources */,
 				719E54FF2ADD197900A87D7D /* CalendarView.swift in Sources */,
 				719E54FB2ADD18ED00A87D7D /* CustomAllBoatScrollView.swift in Sources */,
 				719E54E52ADD15A300A87D7D /* Tu_LanchaApp.swift in Sources */,
+				719E553E2ADD2EAB00A87D7D /* RegisterView.swift in Sources */,
 				719E54F32ADD173000A87D7D /* TabViewCustom.swift in Sources */,
+				719E553C2ADD2DFC00A87D7D /* AuthenticationDataSource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
