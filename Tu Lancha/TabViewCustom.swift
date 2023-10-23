@@ -29,7 +29,7 @@ struct TabViewCustom: View {
                     Text("Reservas")
                 }
                 .edgesIgnoringSafeArea(.top)
-            RegisterView()
+            LoginView()
                 .tabItem {
                     Image(systemName: "person.crop.circle")
                     Text("Perfil")

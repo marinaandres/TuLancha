@@ -6,3 +6,12 @@
 //
 
 import Foundation
+import FirebaseAuth
+
+struct User {
+    let email: String
+}
+final class AuthenticationDataSource {
+    
+    
+}
