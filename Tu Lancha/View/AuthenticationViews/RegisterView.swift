@@ -1,5 +1,5 @@
 //
-//  AccountView.swift
+//  RegisterView.swift
 //  Tu Lancha
 //
 //  Created by Marina Andrés Aragón on 16/10/23.
@@ -7,26 +7,24 @@
 
 import SwiftUI
 
-enum AuthenticationSheetView: String, Identifiable {
-    case register
-    case login
-    
-    var id: String {
-        return rawValue
-    }
-}
-
-struct LoginView: View {
-    @State var showingRegisterView = false
+struct RegisterView: View {
     @State private var userName = ""
     @State private var password = ""
-    
+    @ObservedObject var authenticationViewModel: AuthenticationViewModel
+    @Binding var showingRegisterView: Bool
+
     var body: some View {
         ZStack {
-            BackgroundDesign()
+            Color.blue.ignoresSafeArea(edges: .top)
+            Circle()
+                .scale(1.7)
+                .foregroundColor(.white.opacity(0.15))
+            Circle()
+                .scale(1.35)
+                .foregroundColor(.white)
             VStack(spacing: 60) {
                 VStack {
-                    Text("Inicia Sesión")
+                    Text("Regístrate")
                         .font(.title)
                         .bold()
                         .padding()
@@ -35,13 +33,14 @@ struct LoginView: View {
                         .frame(width: 300, height: 50)
                         .background(Color.black.opacity(0.05))
                         .cornerRadius(10)
-                    TextField("Contraseña", text: $password)
+                        .disableAutocorrection(true)
+                    SecureField("Contraseña", text: $password)
                         .padding()
                         .frame(width: 300, height: 50)
                         .background(Color.black.opacity(0.05))
                         .cornerRadius(10)
                     Button ("Registrarme"){
-                        //AUTH
+                        authenticationViewModel.createUser(email: userName, password: password)
                     }
                     .foregroundColor(.white)
                     .font(.title2)
@@ -50,19 +49,15 @@ struct LoginView: View {
                     .background(Color.blue)
                     .cornerRadius(10)
                     HStack {
-                        Text("¿Aún no tienes cuenta?")
+                        Text("¿Ya tienes cuenta?")
                         Button(action: {
                             showingRegisterView.toggle()
                         }, label: {
-                            Text("Regístrate")
+                            Text("Inicia sesión ahora")
                                 .underline()
                                 .font(.title3)
                         })
                     }
-                    .sheet(isPresented: $showingRegisterView, content: {
-                        RegisterView(showingRegisterView:  $showingRegisterView)
-                    })
-                    
                 }
             }
         }
@@ -70,17 +65,5 @@ struct LoginView: View {
 }
 
 #Preview {
-    LoginView()
-}
-
-struct BackgroundDesign: View {
-    var body: some View {
-        Color.blue.ignoresSafeArea(edges: .top)
-        Circle()
-            .scale(1.7)
-            .foregroundColor(.white.opacity(0.15))
-        Circle()
-            .scale(1.35)
-            .foregroundColor(.white)
-    }
+    RegisterView(authenticationViewModel: AuthenticationViewModel(), showingRegisterView: .constant(false))
 }

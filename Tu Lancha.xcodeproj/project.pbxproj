@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		710BFD702AE6839A00AFC52E /* AuthenticationRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710BFD6F2AE6839A00AFC52E /* AuthenticationRepository.swift */; };
+		710BFD722AE6849100AFC52E /* AuthenticationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710BFD712AE6849100AFC52E /* AuthenticationViewModel.swift */; };
 		719E54E52ADD15A300A87D7D /* Tu_LanchaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719E54E42ADD15A300A87D7D /* Tu_LanchaApp.swift */; };
 		719E54E72ADD15A300A87D7D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719E54E62ADD15A300A87D7D /* ContentView.swift */; };
 		719E54E92ADD15A400A87D7D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 719E54E82ADD15A400A87D7D /* Assets.xcassets */; };
@@ -52,6 +54,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		710BFD6F2AE6839A00AFC52E /* AuthenticationRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationRepository.swift; sourceTree = "<group>"; };
+		710BFD712AE6849100AFC52E /* AuthenticationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationViewModel.swift; sourceTree = "<group>"; };
 		719E54E12ADD15A300A87D7D /* Tu Lancha.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tu Lancha.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		719E54E42ADD15A300A87D7D /* Tu_LanchaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tu_LanchaApp.swift; sourceTree = "<group>"; };
 		719E54E62ADD15A300A87D7D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -108,6 +112,62 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		710BFD692AE6803B00AFC52E /* AuthenticationViews */ = {
+			isa = PBXGroup;
+			children = (
+				719E55002ADD19B600A87D7D /* LoginView.swift */,
+				719E553D2ADD2EAB00A87D7D /* RegisterView.swift */,
+			);
+			path = AuthenticationViews;
+			sourceTree = "<group>";
+		};
+		710BFD6A2AE682F100AFC52E /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				719E553B2ADD2DFC00A87D7D /* AuthenticationDataSource.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		710BFD6B2AE682FD00AFC52E /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				710BFD6F2AE6839A00AFC52E /* AuthenticationRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		710BFD6C2AE6830800AFC52E /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				710BFD712AE6849100AFC52E /* AuthenticationViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		710BFD6D2AE6830F00AFC52E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				710BFD6E2AE6834400AFC52E /* TabView */,
+				710BFD692AE6803B00AFC52E /* AuthenticationViews */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		710BFD6E2AE6834400AFC52E /* TabView */ = {
+			isa = PBXGroup;
+			children = (
+				719E54FE2ADD197900A87D7D /* CalendarView.swift */,
+				719E54FC2ADD191E00A87D7D /* MessageView.swift */,
+				719E54FA2ADD18ED00A87D7D /* CustomAllBoatScrollView.swift */,
+				719E54F42ADD17A100A87D7D /* SearchView.swift */,
+				719E54F62ADD17FA00A87D7D /* CustomMarinaScrollView.swift */,
+				719E54F82ADD189900A87D7D /* CustomEmbarkationScrollView.swift */,
+				719E54F22ADD173000A87D7D /* TabViewCustom.swift */,
+			);
+			path = TabView;
+			sourceTree = "<group>";
+		};
 		719E54D82ADD15A300A87D7D = {
 			isa = PBXGroup;
 			children = (
@@ -127,18 +187,12 @@
 		719E54E32ADD15A300A87D7D /* Tu Lancha */ = {
 			isa = PBXGroup;
 			children = (
+				710BFD6D2AE6830F00AFC52E /* View */,
+				710BFD6C2AE6830800AFC52E /* ViewModel */,
+				710BFD6B2AE682FD00AFC52E /* Repository */,
+				710BFD6A2AE682F100AFC52E /* Data */,
 				719E54E42ADD15A300A87D7D /* Tu_LanchaApp.swift */,
 				719E54E62ADD15A300A87D7D /* ContentView.swift */,
-				719E54F22ADD173000A87D7D /* TabViewCustom.swift */,
-				719E54F42ADD17A100A87D7D /* SearchView.swift */,
-				719E54F62ADD17FA00A87D7D /* CustomMarinaScrollView.swift */,
-				719E54F82ADD189900A87D7D /* CustomEmbarkationScrollView.swift */,
-				719E54FA2ADD18ED00A87D7D /* CustomAllBoatScrollView.swift */,
-				719E54FC2ADD191E00A87D7D /* MessageView.swift */,
-				719E54FE2ADD197900A87D7D /* CalendarView.swift */,
-				719E55002ADD19B600A87D7D /* LoginView.swift */,
-				719E553D2ADD2EAB00A87D7D /* RegisterView.swift */,
-				719E553B2ADD2DFC00A87D7D /* AuthenticationDataSource.swift */,
 				719E54E82ADD15A400A87D7D /* Assets.xcassets */,
 				719E55022ADD1C2C00A87D7D /* GoogleService-Info.plist */,
 				719E54EA2ADD15A400A87D7D /* Preview Content */,
@@ -259,10 +313,12 @@
 			files = (
 				719E54F92ADD189900A87D7D /* CustomEmbarkationScrollView.swift in Sources */,
 				719E54F52ADD17A100A87D7D /* SearchView.swift in Sources */,
+				710BFD722AE6849100AFC52E /* AuthenticationViewModel.swift in Sources */,
 				719E54F72ADD17FA00A87D7D /* CustomMarinaScrollView.swift in Sources */,
 				719E54E72ADD15A300A87D7D /* ContentView.swift in Sources */,
 				719E55012ADD19B600A87D7D /* LoginView.swift in Sources */,
 				719E54FD2ADD191E00A87D7D /* MessageView.swift in Sources */,
+				710BFD702AE6839A00AFC52E /* AuthenticationRepository.swift in Sources */,
 				719E54FF2ADD197900A87D7D /* CalendarView.swift in Sources */,
 				719E54FB2ADD18ED00A87D7D /* CustomAllBoatScrollView.swift in Sources */,
 				719E54E52ADD15A300A87D7D /* Tu_LanchaApp.swift in Sources */,

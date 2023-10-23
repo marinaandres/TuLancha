@@ -17,7 +17,7 @@ struct MessageView: View {
                 Rectangle()
                     .frame(height: 40)
                     .foregroundColor(.white)
-                Text("No te quedes con dudas!")
+                Text("Chat")
                     .font(.title)
             }
             .padding(.top, 60)
